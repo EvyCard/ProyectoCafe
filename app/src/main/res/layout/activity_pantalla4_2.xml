@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pantalla4_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo_6sa"
+        android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textmodp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal"
+                android:text="PROCESAMIENTO"
+                android:textColor="@color/coffe"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textTostado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="left"
+                android:text="TOSTADO"
+                android:textColor="@color/coffe"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AppTheme.TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Peso Cafe Verde"
+                    android:textColor="@color/color_text_view"
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:layout_width="218dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/ic_baseline_assignment_24"
+                    android:drawableLeft="@drawable/ic_baseline_assignment_24"
+                    android:hint="@string/Ingreso_peso_2"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"
+                    tools:layout_editor_absoluteX="173dp"
+                    tools:layout_editor_absoluteY="2dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AppTheme.TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Peso cafe tostado"
+                    android:textColor="@color/color_text_view"
+                    android:textSize="16dp"
+                    tools:layout_editor_absoluteX="2dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:drawableStart="@drawable/ic_baseline_assignment_24"
+                    android:drawableLeft="@drawable/ic_baseline_assignment_24"
+                    android:hint="@string/Ingreso_peso_tostado"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    tools:layout_editor_absoluteX="173dp"
+                    tools:layout_editor_absoluteY="2dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AppTheme.TextViewStyle"
+                    android:layout_width="166dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Color"
+                    android:textColor="@color/color_text_view"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_color"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:drawableLeft="@drawable/ic_baseline_assignment_24"
+                    android:textColor="@color/black"
+                    tools:layout_editor_absoluteX="173dp"
+                    tools:layout_editor_absoluteY="2dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textExtracc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:gravity="left"
+                android:text="EXTRACCIÓN"
+                android:textColor="@color/coffe"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/AppTheme.TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Peso de hidrólisis"
+                    android:textColor="@color/color_text_view"
+
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:drawableStart="@drawable/ic_baseline_equalizer_24"
+                    android:drawableLeft="@drawable/ic_baseline_equalizer_24"
+                    android:hint="@string/Ingreso_almacenamiento_2"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/centrifp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:gravity="left"
+                android:text="CENTRIFUGACIÓN"
+                android:textColor="@color/coffe"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/AppTheme.TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Peso de extracto "
+                    android:textColor="@color/color_text_view"
+
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:drawableStart="@drawable/ic_baseline_equalizer_24"
+                    android:drawableLeft="@drawable/ic_baseline_equalizer_24"
+                    android:hint="@string/Ingreso_almacenamiento_2"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/evaporacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:gravity="left"
+                android:text="EVAPORACIÓN"
+                android:textColor="@color/coffe"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/AppTheme.TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Peso del concentrado "
+                    android:textColor="@color/color_text_view"
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:drawableStart="@drawable/ic_baseline_equalizer_24"
+                    android:drawableLeft="@drawable/ic_baseline_equalizer_24"
+                    android:hint="@string/Ingreso_almacenamiento_2"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/atomizado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:gravity="left"
+                android:text="ATOMIZADO"
+                android:textColor="@color/coffe"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/AppTheme.TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Peso de cafe soluble "
+                    android:textColor="@color/color_text_view"
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:drawableStart="@drawable/ic_baseline_equalizer_24"
+                    android:drawableLeft="@drawable/ic_baseline_equalizer_24"
+                    android:hint="@string/Ingreso_almacenamiento_2"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_regresar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn"
+                    android:text="Regresar"
+                    android:textColor="@color/coffe"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_siguiente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn"
+                    android:text="Siguiente"
+                    android:textColor="@color/coffe"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        <ListView
+            android:id="@+id/lista_mp"
+            android:layout_margin="15dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

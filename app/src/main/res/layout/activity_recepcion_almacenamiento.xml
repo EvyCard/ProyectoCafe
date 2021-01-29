@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fondo_6sa"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+        <TextView
+        android:text="Materia Prima"
+        style="@style/AppTheme.TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/coffe"
+        android:textSize="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="9dp" android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="10"
+            android:text="Fecha de recepción:"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fecha_mp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_baseline_border_color_24"
+            android:inputType="datetime"
+            android:hint="Ingrese la fecha"
+            android:layout_marginEnd="20dp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="10"
+            android:text="Lotes aceptados:"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="10"
+            android:text="Lotes rechazados:"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+
+        <EditText
+            android:id="@+id/lotes_acept"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:drawableLeft="@drawable/ic_baseline_border_color_24"
+            android:hint="cantidad" />
+
+        <EditText
+            android:id="@+id/lotes_rechazados"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp"
+
+            android:drawableLeft="@drawable/ic_baseline_border_color_24"
+            android:hint="cantidad" />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:text="Calidad café arábica:"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+    </LinearLayout>
+        <RadioGroup
+            android:id="@+id/radiogroup_arab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+                <RadioButton
+                    android:id="@+id/rd_ag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:textSize="12dp"
+                    android:text="GRADO 1" />
+
+                <RadioButton
+                    android:id="@+id/rd_ag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="GRADO 2" />
+
+
+
+            <RadioButton
+                android:id="@+id/rd_ag3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="GRADO 3" />
+
+            <RadioButton
+                android:id="@+id/rd_ag4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="GRADO 4" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="10"
+                android:text="Calidad café robusta:"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+         <RadioGroup
+             android:id="@+id/radiogroup_rob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rd_rg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:text="GRADO 1" />
+
+            <RadioButton
+                android:id="@+id/rd_rg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+
+                android:text="GRADO 2" />
+
+            <RadioButton
+                android:id="@+id/rd_rg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+
+                android:text="GRADO 3" />
+         </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="Sacos de café robusta:"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/saco_cafe_r"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                android:hint="cantidad"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="Sacos de café arábica:"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/saco_cafe_a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                android:hint="cantidad"
+                android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_siguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            android:text="Siguiente"
+            android:textColor="@color/coffe"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/conten_list_mp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lista_mp"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
+</LinearLayout>
+
+

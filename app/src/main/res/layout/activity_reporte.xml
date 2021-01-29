@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo_6sa"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="REPORTE DE PRODUCCIÓN"
+                android:textColor="@color/coffe"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="MATERIA PRIMA"
+                android:textColor="@color/coffe"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Lote:"
+                android:textColor="#090115"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="20dp"
+                android:text="Variedad:"
+                android:textColor="#090115"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="20dp"
+                android:text="Cantidad de sacos:"
+                android:textColor="#090115"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:hint="Lote"
+                android:textColor="#5A120C"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="40dp"
+                android:hint="Variedad"
+                android:textColor="#5A120C"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:hint="Cant"
+                android:textColor="#5A120C"
+                android:textSize="16dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TOSTADO"
+                android:textColor="@color/coffe"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Peso café verde:"
+                android:textColor="#090115"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="20dp"
+                android:text="Peso café tostado:"
+                android:textColor="#090115"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="20dp"
+                android:text="Color"
+                android:textColor="#090115"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:hint="peso"
+                android:textColor="#5A120C"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp"
+                android:hint="peso"
+                android:textColor="#5A120C"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="60dp"
+
+                android:hint="color"
+                android:textColor="#070110"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="EXTRACCIÓN"
+                android:textColor="#05000C"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Peso de hidrólisis:"
+                android:textColor="#090115"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Peso de hidrólisis"
+                android:textColor="#5A120C"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="CENTRIFUGACIÓN"
+                android:textColor="@color/coffe"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Peso extracto clarificado:"
+                android:textColor="#090115"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Peso extracto clarificado"
+                android:textColor="#5A120C"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="EVAPORACIÓN"
+                android:textColor="@color/coffe"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Peso del concentrado:"
+                android:textColor="#090115"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Peso concentrado"
+                android:textColor="#5A120C"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="ATOMIZADO"
+                android:textColor="@color/coffe"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Peso café soluble:"
+                android:textColor="#090115"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Peso extracto clarificado"
+                android:textColor="#5A120C"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="ENVASADO"
+            android:textColor="@color/coffe"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Cantidad de empaques:"
+            android:textColor="#090115"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Cantidad de cajas:"
+            android:textColor="#090115"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:hint="empaques"
+            android:textColor="#5A120C"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="100dp"
+            android:hint="cajas"
+            android:textColor="#5A120C"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="EtIQUETADO"
+            android:textColor="@color/coffe"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Fecha de elaboración:"
+            android:textColor="#090115"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Fecha de caducidad:"
+            android:textColor="#090115"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:hint="Fecha elab"
+            android:textColor="#5A120C"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="90dp"
+            android:hint="Fecha cad"
+            android:textColor="#5A120C"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="ENSAYO DE TAZA"
+            android:textColor="@color/coffe"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Resultado:"
+            android:textColor="#090115"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Resultado de taza"
+            android:textColor="#5A120C"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENSAYO DE SOLUBILIDAD"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/coffe"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Resultado:"
+            android:textColor="#090115"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Resultado de solubilidad"
+            android:textColor="#5A120C"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btn_regresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn"
+            android:text="REGRESAR"
+            android:textColor="@color/coffe"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

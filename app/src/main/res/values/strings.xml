@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Proyecto_cafe</string>
+    <string name="titulo_usuario">Usuario</string>
+    <string name="ingreso_usuario">Ingresar Usuario</string>
+    <string name="clave_usuario">Contraseña</string>
+    <string name="ingreso_clave">Ingresar Contraseña</string>
+    <string name="boton_cancelar">Cancelar</string>
+    <string name="boton_aceptar">Aceptar</string>
+    <string name="Menu">Menú</string>
+    <string name="bienvenida">Bienvenido a notas</string>
+    <string name="lotes"> Cantidad de lotes aceptados</string>
+    <string name="title_activity_recepcion_almacenamiento">RecepcionAlmacenamiento</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="Ingreso_peso_2">Ingrese el peso</string>
+    <string name="Ingreso_color">Ingrese el color</string>
+    <string name="tiempo">Tiempo de tostado</string>
+    <string name="Ingreso_fecha">Ingrese el tiempo de tostado</string>
+    <string name="Ingreso_peso_tostado">Peso del cafe tostado</string>
+    <string name="Ingreso_temperatura">Ingrese la temperatura</string>
+    <string name="Ingreso_fecha2">Ingrese el tiempo</string>
+    <string name="Ingreso_temperatura1">Ingrese la temperatura</string>
+    <string name="Ingreso_almacenamiento_2">Ingrese Peso</string>
+    <string name="Ingreso_acidez">Ingrese la acidez</string>
+    <string name="boton_siguiente">SIGUIENTE</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+</resources>

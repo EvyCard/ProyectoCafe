@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#C7CF71</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/Accent</item>
+        <item name="color">@color/coffe</item>
+        <item name="colorSecondaryVariant">#190050</item>
+
+
+    </style>
+
+    <style name="AppTheme.TextViewStyle" parent="AppTheme">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/color_text_view</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+
+
+    </style>
+    <style name="AppThem" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/color_text_view</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+
+
+    </style>
+    <style name="AppThemen" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    </style>
+
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/op_home"
+        android:title="Menu principal"
+        android:icon="@drawable/home"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/op_list"
+        android:title="Lista"
+        android:icon="@drawable/list"
+        app:showAsAction="always">
+
+    </item>
+
+    <item
+        android:id="@+id/more"
+        android:title="more"
+        android:icon="@drawable/more">
+
+        <item
+            android:id="@+id/op_add"
+            android:title="Agregar"
+            android:icon="@drawable/ic_baseline_add_circle_24">
+        </item>
+        <item
+            android:id="@+id/op_save"
+            android:icon="@drawable/save"
+            android:title="Guardar">
+        </item>
+        <item
+            android:id="@+id/op_delete"
+            android:title="Eliminar"
+            android:icon="@drawable/delete">
+        </item>
+    </item>
+
+
+
+
+</menu>

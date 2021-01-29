@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_text_view"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/cuadro1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:src="@drawable/logocafe1" />
+
+
+    <TextView
+        style="@style/AppTheme.TextViewStyle"
+        android:layout_width="46dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="150dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Correo"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txt_correo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:drawableStart="@drawable/ic_baseline_border_color_24"
+        android:drawableLeft="@drawable/ic_baseline_border_color_24"
+        android:background="@color/white"
+        android:hint="Ingresar correo"
+        android:textColor="@color/black" />
+
+    <TextView
+        style="@style/AppTheme.TextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="112dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Contraseña"
+        android:hint="@string/clave_usuario"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/clave"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:textColor="#887F7F"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginStart="28dp"
+        android:hint="@string/ingreso_clave"
+        android:layout_marginEnd="28dp"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_ingresar"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="30dp"
+            android:onClick="IniciarSesion"
+            android:text="INGRESAR"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/register"
+            app:rippleColor="@color/design_default_color_on_primary"
+            app:strokeColor="@color/white"
+            app:strokeWidth="3dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_registro"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:text="REGISTRAR"
+            app:icon="@drawable/register"
+            app:rippleColor="@color/design_default_color_on_primary"
+            app:strokeColor="@color/white"
+            app:strokeWidth="3dp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            android:layout_marginStart="28dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

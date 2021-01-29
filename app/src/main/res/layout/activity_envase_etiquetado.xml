@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_6sa"
+    android:layout_marginRight="10dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="right"
+        android:text="ENVASADO"
+
+        android:textColor="@color/coffe"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de envasado: "
+            android:textColor="@color/colorLetra"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:textStyle="bold"
+           />
+
+        <EditText
+            android:id="@+id/edit_placa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="Ingrese la fecha"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="20dp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cantidad de empaques: "
+            android:textColor="@color/colorLetra"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp" />
+        <EditText
+            android:id="@+id/edit_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Ingrese la cantidad"
+
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Cantidad de cajas: "
+            android:textColor="@color/colorLetra"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp" />
+
+        <EditText
+            android:layout_marginStart="10dp"
+            android:id="@+id/edit_marca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Ingrese la cantidad"
+            android:layout_weight="1"
+            android:layout_marginEnd="20dp" />
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/etiq"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="right"
+        android:text="ETIQUETADO"
+        android:textColor="@color/coffe"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginRight="1dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de etiquetado: "
+            android:textColor="@color/colorLetra"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp" />
+
+        <EditText
+            android:layout_marginStart="5dp"
+            android:id="@+id/edit_año"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:layout_weight="1"
+            android:hint="Ingrese la fecha"
+            android:layout_marginEnd="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de elaboración: "
+            android:textColor="@color/colorLetra"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp" />
+        <EditText
+            android:id="@+id/edit_fep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:layout_marginStart="10dp"
+            android:hint="Ingrese la fecha"
+            android:layout_weight="1"
+            android:layout_marginEnd="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de caducidad: "
+            android:textColor="@color/colorLetra"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:id="@+id/edit_fcp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="date"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_regresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn"
+            android:text="Regresar"
+            android:textColor="@color/coffe"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_siguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn"
+            android:text="Siguiente"
+            android:textColor="@color/coffe"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lista_mp"
+        android:layout_margin="15dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
+</LinearLayout>

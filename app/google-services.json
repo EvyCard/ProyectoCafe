@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1051029140487",
+    "project_id": "proyectocafe-35dad",
+    "storage_bucket": "proyectocafe-35dad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051029140487:android:753f82ddb705c5b23ea6a2",
+        "android_client_info": {
+          "package_name": "com.example.proyectocafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051029140487-vml01nr2p2fcujn68srtutt0ominp8s3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqqh04oUE0n8SC8ki754Zv46RXMjJ7fUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051029140487-vml01nr2p2fcujn68srtutt0ominp8s3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
