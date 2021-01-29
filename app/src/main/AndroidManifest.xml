@@ -13,17 +13,27 @@
         android:theme="@style/Theme.Proyecto_cafe">
         <activity android:name=".Registrarse"></activity>
         <activity android:name=".Reporte" />
-        <activity android:name=".Pantalla_ensayo" />
-        <activity android:name=".Pantalla4_2" />
-        <activity android:name=".Envase_etiquetado" />
-        <activity android:name=".Recepcion_almacenamiento"/>
-        <activity android:name=".Menu_principal" />
-        <activity android:name=".Login_cafe">
+        <activity android:name=".Pantalla_ensayo" >
+
+        </activity>
+        <activity android:name=".Pantalla4_2" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Envase_etiquetado" >
+
+        </activity>
+        <activity android:name=".Recepcion_almacenamiento">
+
+        </activity>
+        <activity android:name=".Menu_principal" >
+
+        </activity>
+        <activity android:name=".Login_cafe">
+
         </activity>
     </application>
 

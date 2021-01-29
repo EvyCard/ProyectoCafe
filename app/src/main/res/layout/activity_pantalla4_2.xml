@@ -58,6 +58,7 @@
                     tools:ignore="MissingConstraints" />
 
                 <EditText
+                    android:id="@+id/pesoCafe"
                     android:layout_width="218dp"
                     android:layout_height="50dp"
                     android:layout_marginStart="8dp"
@@ -91,6 +92,7 @@
                     tools:layout_editor_absoluteX="2dp" />
 
                 <EditText
+                    android:id="@+id/pesoCafeTostado"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_marginStart="8dp"
@@ -166,9 +168,11 @@
                     tools:ignore="MissingConstraints" />
 
                 <EditText
+                    android:id="@+id/pesoHidrolosis"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
+                    android:inputType="number"
                     android:layout_marginLeft="70dp"
                     android:layout_marginEnd="20dp"
                     android:layout_marginRight="20dp"
@@ -212,12 +216,14 @@
                     tools:ignore="MissingConstraints" />
 
                 <EditText
+                    android:id="@+id/pesoExtracto"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginEnd="20dp"
                     android:layout_marginRight="20dp"
+                    android:inputType="number"
                     android:drawableStart="@drawable/ic_baseline_equalizer_24"
                     android:drawableLeft="@drawable/ic_baseline_equalizer_24"
                     android:hint="@string/Ingreso_almacenamiento_2"
@@ -257,12 +263,14 @@
                     tools:ignore="MissingConstraints" />
 
                 <EditText
+                    android:id="@+id/pesoConcentrado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginEnd="20dp"
                     android:layout_marginRight="20dp"
+                    android:inputType="number"
                     android:drawableStart="@drawable/ic_baseline_equalizer_24"
                     android:drawableLeft="@drawable/ic_baseline_equalizer_24"
                     android:hint="@string/Ingreso_almacenamiento_2"
@@ -302,6 +310,7 @@
                     tools:ignore="MissingConstraints" />
 
                 <EditText
+                    android:id="@+id/pesoCafeSoluble"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -311,6 +320,7 @@
                     android:drawableStart="@drawable/ic_baseline_equalizer_24"
                     android:drawableLeft="@drawable/ic_baseline_equalizer_24"
                     android:hint="@string/Ingreso_almacenamiento_2"
+                    android:inputType="number"
                     android:textColor="@color/black" />
 
             </LinearLayout>

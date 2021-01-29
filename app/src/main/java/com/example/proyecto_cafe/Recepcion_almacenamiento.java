@@ -43,7 +43,7 @@ public class Recepcion_almacenamiento extends AppCompatActivity {
     private RadioButton rg3;
 
     private RadioGroup radiog_arab;
-    private RadioGroup radiog_rob;
+    //private RadioGroup radiog_rob;
 
 
     private Button siguiente;
@@ -84,24 +84,7 @@ public class Recepcion_almacenamiento extends AppCompatActivity {
                 Intent next = new Intent(Recepcion_almacenamiento.this, Pantalla4_2.class);
                 startActivity(next);
             }
-        });/*
-
-        radiog_arab.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                int radio_id_ga=radiog_arab.getCheckedRadioButtonId();
-                select_ag=findViewById(radio_id_ga);
-            }
         });
-
-        radiog_rob.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                int radio_id_gr=radiog_rob.getCheckedRadioButtonId();
-                select_rg=findViewById(radio_id_gr);
-            }
-        });*/
-
 
     }
 
