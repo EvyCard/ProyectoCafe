@@ -17,17 +17,17 @@
 
         </activity>
         <activity android:name=".Pantalla4_2" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".Envase_etiquetado" >
 
         </activity>
         <activity android:name=".Recepcion_almacenamiento">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".Menu_principal" >
 

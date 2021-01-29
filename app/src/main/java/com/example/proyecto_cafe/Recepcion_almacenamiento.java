@@ -91,7 +91,7 @@ public class Recepcion_almacenamiento extends AppCompatActivity {
     private void inicializarFirebase() {
         FirebaseApp.initializeApp(this);
         firebaseDatabase=FirebaseDatabase.getInstance();
-        databaseReference=firebaseDatabase.getReference();
+        databaseReference=firebaseDatabase.getReference("materia_prima");
     }
 
 
@@ -140,7 +140,7 @@ public class Recepcion_almacenamiento extends AppCompatActivity {
                 modelo_mp.setM_lotes_rechazado(m_lotes_rechazado);
                 modelo_mp.setM_sacos_cafe_arab(m_sacos_cafe_arab);
                 modelo_mp.setM_sacos_cafe_arab(m_sacos_cafe_arab);
-                databaseReference.child("materia_prima").child(modelo_mp.getM_id_mp()).setValue(modelo_mp);
+                databaseReference.setValue(modelo_mp);
 
                 Toast.makeText(Recepcion_almacenamiento.this, "Agregar", Toast.LENGTH_SHORT).show();
                 LimpiarCajas();
