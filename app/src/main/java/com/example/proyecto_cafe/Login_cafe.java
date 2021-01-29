@@ -68,6 +68,9 @@ public class Login_cafe extends AppCompatActivity {
 
     public void IniciarSesion (View view)
     {
+
+
+        if (checkEmptyFields(correo, clave)){
             mAuth.signInWithEmailAndPassword(correo.getText().toString(), clave.getText().toString())
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                         @Override
@@ -89,6 +92,21 @@ public class Login_cafe extends AppCompatActivity {
                             }
                         }
                     });
+        }else{
+            Toast.makeText(this, "Los campos no pueden estar vacios", Toast.LENGTH_SHORT).show();
+        }
+
+
+
     }
+
+    public boolean checkEmptyFields(EditText user, EditText pass){
+
+        return !user.getText().toString().equals("") && !pass.getText().toString().equals("");
+
+    }
+
+
+
 
 }
