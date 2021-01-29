@@ -38,7 +38,7 @@
            />
 
         <EditText
-            android:id="@+id/edit_placa"
+            android:id="@+id/fechaEnvasado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="date"
@@ -66,7 +66,7 @@
             android:textSize="14dp"
             android:layout_marginLeft="10dp" />
         <EditText
-            android:id="@+id/edit_color"
+            android:id="@+id/cantidadEmpaques"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -95,7 +95,7 @@
 
         <EditText
             android:layout_marginStart="10dp"
-            android:id="@+id/edit_marca"
+            android:id="@+id/cantidadCajas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -141,7 +141,7 @@
 
         <EditText
             android:layout_marginStart="5dp"
-            android:id="@+id/edit_año"
+            android:id="@+id/fechaEtiquetado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="date"
@@ -167,7 +167,7 @@
             android:layout_weight="1"
             android:layout_marginLeft="10dp" />
         <EditText
-            android:id="@+id/edit_fep"
+            android:id="@+id/fechaElaboracion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="date"
@@ -193,12 +193,13 @@
             android:textSize="14dp"
             android:layout_weight="1"
             android:layout_marginLeft="10dp" />
-        <TextView
-            android:id="@+id/edit_fcp"
+        <EditText
+            android:id="@+id/fechaCaducidad"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:inputType="date"
             android:layout_marginStart="10dp"
+            android:hint="Ingrese la fecha"
             android:layout_weight="1"
             android:layout_marginEnd="20dp" />
 

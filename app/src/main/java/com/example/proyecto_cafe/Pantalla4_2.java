@@ -8,15 +8,34 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.example.proyecto_cafe.controllers.Pantalla_4_class;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Pantalla4_2 extends AppCompatActivity {
 
     private Button regresar;
     private Button siguiente;
     private Spinner color_sp;
+
+
+    private EditText pesoCafe;
+    private EditText pesoCafeTostado;
+    private EditText pesoHidrolosis;
+    private EditText pesoExtracto;
+    private EditText pesoConcentrado;
+    private EditText pesoCafeSoluble;
+
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +74,15 @@ public class Pantalla4_2 extends AppCompatActivity {
             }
         });
 
+        pesoCafe = (EditText) findViewById(R.id.pesoCafe);
+        pesoCafeTostado = (EditText)findViewById(R.id.pesoCafeTostado);
+        pesoHidrolosis = (EditText)findViewById(R.id.pesoHidrolosis);
+        pesoExtracto = (EditText) findViewById(R.id.pesoExtracto);
+        pesoConcentrado = (EditText) findViewById(R.id.pesoConcentrado);
+        pesoCafeSoluble = (EditText) findViewById(R.id.pesoCafeSoluble);
+
+
+
     }
 
     @Override
@@ -80,11 +108,51 @@ public class Pantalla4_2 extends AppCompatActivity {
 
         }
         else if(idm==R.id.op_add){
+
+
+
+
+
+
             Toast.makeText(Pantalla4_2.this, "Agregar", Toast.LENGTH_SHORT).show();
 
         }
         else if(idm==R.id.op_save){
-            Toast.makeText(Pantalla4_2.this, "Guardar", Toast.LENGTH_SHORT).show();
+
+            if(emptyFields(pesoCafe,pesoCafeTostado, pesoHidrolosis, pesoExtracto, pesoConcentrado, pesoCafeSoluble)){
+                FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+                DatabaseReference baseAdapter = firebaseDatabase.getReference("proceso");
+
+                Pantalla_4_class pantallazo = new Pantalla_4_class(
+                        Integer.parseInt(pesoCafe.getText().toString()),
+                        Integer.parseInt(pesoCafeTostado.getText().toString()),
+                        Integer.parseInt(pesoHidrolosis.getText().toString()),
+                        Integer.parseInt(pesoExtracto.getText().toString()) ,
+                        Integer.parseInt(pesoConcentrado.getText().toString()) ,
+                        Integer.parseInt(pesoCafeSoluble.getText().toString()) ,
+                        color_sp.getSelectedItem().toString());
+
+
+                baseAdapter.setValue(pantallazo);
+                Toast.makeText(Pantalla4_2.this, "Guardar", Toast.LENGTH_SHORT).show();
+
+
+                pesoCafe.setText("");
+                pesoCafeTostado.setText("");
+                pesoHidrolosis.setText("");
+                pesoExtracto.setText("");
+                pesoConcentrado.setText("");
+                pesoCafeSoluble.setText("");
+            }
+
+
+
+
+
+
+
+
+
 
         }
         else if(idm==R.id.op_delete){
@@ -97,4 +165,20 @@ public class Pantalla4_2 extends AppCompatActivity {
 
 
     }
+
+    public boolean emptyFields(EditText pesoCafe,
+             EditText pesoCafeTostado,
+             EditText pesoHidrolosis,
+             EditText pesoExtracto,
+             EditText pesoConcentrado,
+             EditText pesoCafeSoluble){
+
+
+        return !pesoCafe.getText().toString().equals("") && !pesoCafeTostado.getText().toString().equals("") && !pesoHidrolosis.getText().toString().equals("") &&
+                !pesoExtracto.getText().toString().equals("") && !pesoConcentrado.getText().toString().equals("") && !pesoCafeSoluble.getText().toString().equals("");
+
+    }
+
+
+
 }

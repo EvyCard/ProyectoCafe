@@ -132,67 +132,112 @@
                 android:textColor="@color/black"
                 android:textSize="16dp"
                 android:textStyle="bold" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="10"
+            android:text="Calidad café robusta:"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
 
     </LinearLayout>
         <RadioGroup
             android:id="@+id/radiogroup_arab"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rd_ag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:textSize="12dp"
+                android:text="GRADO 1" />
+            <RadioButton
+                android:id="@+id/rd_rg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-45dp"
+                android:layout_marginStart="200dp"
+                android:text="GRADO 1" />
 
+            <RadioButton
+                android:id="@+id/rd_ag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="GRADO 2" />
+            <RadioButton
+                android:id="@+id/rd_rg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="-45dp"
 
-
-                <RadioButton
-                    android:id="@+id/rd_ag1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:textSize="12dp"
-                    android:text="GRADO 1" />
-
-                <RadioButton
-                    android:id="@+id/rd_ag2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:text="GRADO 2" />
-
-
-
+                android:text="GRADO 2" />
             <RadioButton
                 android:id="@+id/rd_ag3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="15dp"
+                android:text="GRADO 3" />
+            <RadioButton
+                android:id="@+id/rd_rg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="-45dp"
+
                 android:text="GRADO 3" />
 
             <RadioButton
                 android:id="@+id/rd_ag4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="15dp"
                 android:text="GRADO 4" />
-        </RadioGroup>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
-            <TextView
 
+
+
+
+            <!--<LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="10"
-                android:text="Calidad café robusta:"
-                android:textColor="@color/black"
-                android:textSize="16dp"
-                android:textStyle="bold" />
-        </LinearLayout>
-         <RadioGroup
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rd_rg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="GRADO 1" />
+
+                <RadioButton
+                    android:id="@+id/rd_rg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+
+                    android:text="GRADO 2" />
+
+                <RadioButton
+                    android:id="@+id/rd_rg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+
+                    android:text="GRADO 3" />
+            </LinearLayout>-->
+        </RadioGroup>
+
+
+         <!--<RadioGroup
              android:id="@+id/radiogroup_rob"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -220,7 +265,11 @@
                 android:layout_marginStart="15dp"
 
                 android:text="GRADO 3" />
-         </RadioGroup>
+
+
+
+
+         </RadioGroup>-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -287,6 +336,7 @@
             android:layout_marginStart="130dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn"
+            android:onClick="onClickSiguiente"
             android:text="Siguiente"
             android:textColor="@color/coffe"
             android:textSize="16dp"
